@@ -20,27 +20,39 @@ import {
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
+  withRepeat,
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
+// const handleRotate=(progress)=>{
+//   'worklet'
+//   return `${progress.value* Math.PI}rad`}
+    
 
 const App = () => {
   const progress = useSharedValue(1);
-  const scale = useSharedValue(1);
+  const scale = useSharedValue(2);
+const handleRotate=(progress)=>{
+  'worklet'
+  return `${progress.value* Math.PI}rad`}
+
   const reanimatedStyle = useAnimatedStyle(() => {
     return {
       opacity: progress.value,
-      transform:[{scale:scale.value}]
+      borderRadius:(progress.value*100.0)/2,
+      transform:[{scale:scale.value},
+        {rotate:`${progress.value* Math.PI}rad`}
+        // {rotate:handleRotate(progress.value)}
+      ],
+      
     };
   }, []);
   useEffect(()=>{
-    // progress.value=withTiming(0,{duration:5000})
-    progress.value=withTiming(0.5)
-    // scale.value=withTiming(2)
-    scale.value=withSpring(2)
+    progress.value=withRepeat(withTiming(0.5),-1,true)
+    scale.value=withRepeat(withSpring(1),-1,true)
   },[])
   return (
     <SafeAreaView
