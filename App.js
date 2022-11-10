@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
+import ThemAnimation from './src/Componanat/ThemAnimation';
 
 const App = () => {
  
@@ -23,7 +24,7 @@ const App = () => {
         justifyContent: 'center',
       }}>
       <StatusBar barStyle={'default'} />
-<InterpolateWIthScrollView/>
+<ThemAnimation/>
     </View>
   );
 };
