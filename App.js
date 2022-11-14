@@ -11,21 +11,24 @@ import {
 } from 'react-native';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
+import PinGestureHandler from './src/Componanat/PinGestureHandler';
 import ThemAnimation from './src/Componanat/ThemAnimation';
 
 const App = () => {
  
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: 'white',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
-      <StatusBar barStyle={'default'} />
-<ThemAnimation/>
-    </View>
+    // <View
+    //   style={{
+    //     flex: 1,
+    //     backgroundColor: 'white',
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //   }}>
+    //   <StatusBar barStyle={'default'} />
+    <View style={{flex:1}}>
+<PinGestureHandler/>
+</View>
+    // </View>
   );
 };
 
