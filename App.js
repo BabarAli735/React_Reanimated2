@@ -9,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
 import PinGestureHandler from './src/Componanat/PinGestureHandler';
@@ -26,7 +27,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<PinGestureHandler/>
+<DoubleTabAnimation/>
 </View>
     // </View>
   );
