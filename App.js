@@ -9,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import CustomColorPicker from './src/Componanat/CustomColorPicker';
 import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
@@ -28,7 +29,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<ScrollViewUsingPanGesture/>
+<CustomColorPicker/>
 </View>
     // </View>
   );
