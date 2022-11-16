@@ -9,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import CircularProgressBar from './src/Componanat/CircularProgressBar';
 import CustomColorPicker from './src/Componanat/CustomColorPicker';
 import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
 import GestureHandler from './src/Componanat/GestureHandler';
@@ -29,7 +30,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<CustomColorPicker/>
+<CircularProgressBar/>
 </View>
     // </View>
   );
