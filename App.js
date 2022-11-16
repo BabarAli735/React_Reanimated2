@@ -16,6 +16,7 @@ import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
 import PinGestureHandler from './src/Componanat/PinGestureHandler';
+import RippleEffectAnimation from './src/Componanat/RippleEffectAnimation';
 import ScrollViewUsingPanGesture from './src/Componanat/ScrollViewUsingPanGesture';
 import ThemAnimation from './src/Componanat/ThemAnimation';
 
@@ -31,7 +32,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<CustomSwipeToDelete/>
+<RippleEffectAnimation/>
 </View>
     // </View>
   );
