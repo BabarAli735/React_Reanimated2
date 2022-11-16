@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import CircularProgressBar from './src/Componanat/CircularProgressBar';
 import CustomColorPicker from './src/Componanat/CustomColorPicker';
+import CustomSwipeToDelete from './src/Componanat/CustomSwipeToDelete';
 import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
@@ -30,7 +31,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<CircularProgressBar/>
+<CustomSwipeToDelete/>
 </View>
     // </View>
   );
