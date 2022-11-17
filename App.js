@@ -19,6 +19,7 @@ import PinGestureHandler from './src/Componanat/PinGestureHandler';
 import Respective_Menue_Animation from './src/Componanat/Respective_Menue_Animation';
 import RippleEffectAnimation from './src/Componanat/RippleEffectAnimation';
 import ScrollViewUsingPanGesture from './src/Componanat/ScrollViewUsingPanGesture';
+import Slide_CounterAnimation from './src/Componanat/Slide_CounterAnimation';
 import ThemAnimation from './src/Componanat/ThemAnimation';
 
 const App = () => {
@@ -33,7 +34,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<Respective_Menue_Animation/>
+<Slide_CounterAnimation/>
 </View>
     // </View>
   );
