@@ -10,6 +10,7 @@ import {
   View,
 } from 'react-native';
 import CircularProgressBar from './src/Componanat/CircularProgressBar';
+import ClockLoader_Animation from './src/Componanat/ClockLoader_Animation';
 import CustomColorPicker from './src/Componanat/CustomColorPicker';
 import CustomSwipeToDelete from './src/Componanat/CustomSwipeToDelete';
 import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
@@ -34,7 +35,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<Slide_CounterAnimation/>
+<ClockLoader_Animation/>
 </View>
     // </View>
   );
