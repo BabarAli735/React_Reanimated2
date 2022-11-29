@@ -9,6 +9,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import AnimatedFlateList from './src/Componanat/AnimatedFlateList';
 import CircularProgressBar from './src/Componanat/CircularProgressBar';
 import ClockLoader_Animation from './src/Componanat/ClockLoader_Animation';
 import CustomColorPicker from './src/Componanat/CustomColorPicker';
@@ -16,6 +17,7 @@ import CustomSwipeToDelete from './src/Componanat/CustomSwipeToDelete';
 import DoubleTabAnimation from './src/Componanat/DoubleTabAnimation';
 import GestureHandler from './src/Componanat/GestureHandler';
 import InterpolateWIthScrollView from './src/Componanat/InterpolateWIthScrollView';
+import Magic_Layout_Animatiom from './src/Componanat/Magic_Layout_Animatiom';
 import PinGestureHandler from './src/Componanat/PinGestureHandler';
 import Respective_Menue_Animation from './src/Componanat/Respective_Menue_Animation';
 import RippleEffectAnimation from './src/Componanat/RippleEffectAnimation';
@@ -35,7 +37,7 @@ const App = () => {
     //   }}>
     //   <StatusBar barStyle={'default'} />
     <View style={{flex:1}}>
-<ClockLoader_Animation/>
+<AnimatedFlateList/>
 </View>
     // </View>
   );
